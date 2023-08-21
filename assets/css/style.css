@@ -94,7 +94,7 @@ input[type="checkbox"] {
 }
 
 .bg-img {
-    background-image: url(../images/png/bg-img.png);
+    background-image: url("../images/png/bg-img.png");
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -138,8 +138,8 @@ input[type="checkbox"] {
     content: "";
     background: #00000048;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 11px;
+    right: 22px;
     height: 2px;
     bottom: 34px;
 
@@ -165,6 +165,10 @@ input[type="checkbox"] {
     padding: 8px 24px;
     align-items: flex-start;
     gap: 10px;
+}
+.editbtn:hover{
+    color: black;
+    background-color: white;
 }
 
 .pl-20 {
@@ -255,6 +259,14 @@ body {
 
 .overflow-y {
     overflow-y: scroll;
+
+}
+.overflow-y::-webkit-scrollbar{
+    width: 6px;
+}
+
+.overflow-y::-webkit-scrollbar-thumb {
+    background: black;
 }
 
 .ff-value {
@@ -327,25 +339,26 @@ body {
     right: 40%;
 }
 
-.line1 {
-    position: relative;
+.pos-absol {
+    position: absolute;
+    top: 63%;
+    left: 34%;
 }
 
 .line1::after {
     content: "";
-  
 }
 
 .line1::before {
-    position: absolute;
     content: "";
-    width: 1px;
-    height: 49px;
-    opacity: 0.2;
-    background: #000;
-    left: -13%;
-    top: 10%;
 }
+
+
+.line1 {
+    position: relative;
+}
+
+
 
 /* navbar */
 .mr_4 {
@@ -463,6 +476,16 @@ body {
         top: 10%;
         right: 13%;
     }
-}
 
-@media (min-width:992px) {}
+    .line1::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 49px;
+        opacity: 0.2;
+        background: #000;
+        left: -13%;
+        top: 10%;
+    }
+
+}
