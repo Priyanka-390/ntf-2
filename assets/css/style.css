@@ -152,7 +152,9 @@ input[type="checkbox"] {
 .pt-127 {
     padding-top: 127px;
 }
-
+.border-radius{
+    border-radius: 30px;
+}
 .editbtn {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -165,6 +167,7 @@ input[type="checkbox"] {
     padding: 8px 24px;
     align-items: flex-start;
     gap: 10px;
+    border: none;
 }
 .editbtn:hover{
     color: black;
